@@ -6,19 +6,29 @@ void setup() {
 
 void loop() {
 
+  int pressure1 = analogRead(A0);
+  int pressure2 = analogRead(A1);
+  int pressure3 = analogRead(A2);
+  int pressure4 = analogRead(A3);
+  int pressure5 = analogRead(A4);
+  int pressure6 = analogRead(A5);
+  int softpot1 = analogRead(A6);
+  int softpot2 = analogRead(A7);
   
-  int pot1 = analogRead(A0);
-  int pot2 = analogRead(A1);
-  int flex1 = analogRead(A2);
-  int flex2 = analogRead(A3);
-
-
-  Serial.print(pot1);
+  Serial.print(pressure1);
   Serial.print(" ");
-  Serial.print(pot2);
+  Serial.print(pressure2);
   Serial.print(" ");
-  Serial.print(flex1);
+  Serial.print(pressure3);
   Serial.print(" ");
-  Serial.println(flex2);
+  Serial.print(pressure4);
+  Serial.print(" ");
+  Serial.print(pressure5);
+  Serial.print(" ");
+  Serial.print(pressure6);
+  Serial.print(" ");
+  Serial.print(softpot1);
+  Serial.print(" ");
+  Serial.println(softpot2);
   delay(250);
 }
